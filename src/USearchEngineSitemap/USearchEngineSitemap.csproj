@@ -7,8 +7,8 @@
     <ProjectGuid>{FA267406-7641-47BA-BC63-4DBC118D3361}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SearchEngineSitemap</RootNamespace>
-    <AssemblyName>SearchEngineSitemap</AssemblyName>
+    <RootNamespace>Heyday.USearchEngineSitemap</RootNamespace>
+    <AssemblyName>Heyday.USearchEngineSitemap</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
