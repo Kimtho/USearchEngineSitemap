@@ -23,10 +23,10 @@ namespace SearchEngineSitemap
 			var url =Request.Url.AbsolutePath.Replace("sitemap.xml", "");
 			
 			EmbeddedViewHandler embedded= new EmbeddedViewHandler();
-			
+			var file = embedded.GetFile("~/Views/Sitemap.cshtml");
 			var model = uQuery.GetNodeByUrl(url);
 
-			return View(embedded.GetFile("~/Views/Sitemap.cshtml").VirtualPath, help.TypedContent(model.Id));
+			return View(file.VirtualPath, help.TypedContent(model.Id));
 		}
 	}
 }

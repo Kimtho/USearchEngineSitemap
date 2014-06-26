@@ -90,7 +90,7 @@ namespace SearchEngineSitemap
 				path = path.Substring(1);
 
 			//path = path.ToLowerInvariant();
-			path = "SearchEngineSitemap" + path.Replace('/', '.');
+			path = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name +path.Replace('/', '.');
 
 			// this makes sure the "virtual path" exists as an
 			// embedded resource
