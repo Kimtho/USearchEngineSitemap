@@ -22,10 +22,11 @@ namespace SearchEngineSitemap
 			var help = new UmbracoHelper(UmbracoContext.Current);
 			var url =Request.Url.AbsolutePath.Replace("sitemap.xml", "");
 			
+			EmbeddedViewHandler embedded= new EmbeddedViewHandler();
 			
 			var model = uQuery.GetNodeByUrl(url);
 
-			return View("~/Views/Sitemap.cshtml", help.TypedContent(model.Id));
+			return View(embedded.GetFile("~/Views/Sitemap.cshtml").VirtualPath, help.TypedContent(model.Id));
 		}
 	}
 }
